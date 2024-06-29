@@ -1,0 +1,23 @@
+1.Write a Java method to compute the average of three numbers.
+
+import java.util.*;
+public class average{
+    static int avg(int a,int b,int c){
+        return (a+b+c)/3;
+    }
+    public static void main(String arg[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a:");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b:");
+        int b = sc.nextInt();
+        System.out.println("enter the value of c:");
+        int c = sc.nextInt();
+        System.out.println("the average of 3 numbers is "+avg(a,b,c)+"\n");
+    }
+}
+enter the value of a: 10
+enter the value of b: 20
+enter the value of c: 30
+the average of 3 numbers is 20
+--------------------------------------------------------------------------------------------------------
