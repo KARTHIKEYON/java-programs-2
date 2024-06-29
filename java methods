@@ -21,3 +21,35 @@ enter the value of b: 20
 enter the value of c: 30
 the average of 3 numbers is 20
 --------------------------------------------------------------------------------------------------------
+2.Write a Java method to display the middle character of a string.
+
+Note: a) If the length of the string is odd there will be two middle characters.
+b) If the length of the string is even there will be one middle character.
+
+import java.util.*;
+public class Letter{
+    public static void main(String[] arg){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the String :");
+        String s = sc.nextLine();
+        System.out.println("the middle character of the strings "+middle(s)+"\n");
+        }
+    public static String middle(String s)
+    {
+        int  position;
+        int length;
+        if(s.length()%2 == 0){
+            position = s.length()/2-1;
+            length = 2;
+        }
+        else{
+            position = s.length()/2;
+            length = 1;
+        }
+        return s.substring(position,length+position);
+    }
+}
+Enter the String : karthi
+the middle character of the strings rt
+------------------------------------------------------------------------------------------------------
+
