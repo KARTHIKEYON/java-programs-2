@@ -78,8 +78,28 @@ public class Alpha{
         
 }
 
-enter the string:
-vishal
-the vowels in the string are 2
+enter the string: vishal
+the vowels in the string are 2 
+-------------------------------------------------------------------------------------------------------
+4.Create a Car object named myCar. Call the fullThrottle() and speed() methods on the myCar object, and run the program:
 
+public class Main{
+    public void trottle(){
+        System.out.println("full trottle");
+    }
+    public int speed(int maxspeed){
+        System.out.println("the max :"+maxspeed);
+        return maxspeed;
+    }
+    public static void main(String arg[]){
+        Main mycar= new Main();
+        mycar.trottle();
+        mycar.speed(120);
+    }
+}
+
+output:
+full trottle
+the max :120
+--------------------------------------------------------------------------------------------------------
 
