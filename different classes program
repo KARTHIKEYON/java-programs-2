@@ -1,0 +1,16 @@
+1.
+
+class Car{
+    String colour="red";
+    String name="ford";
+}
+public class Main{
+    public static void main(String arg[]){
+        Car collection = new Car();
+        System.out.println("My Car is "+collection.name+" and colour "+collection.colour+"\n");
+    }
+} 
+
+output:
+My car is ford and colour red.
+--------------------------------------------------------------------------------------
