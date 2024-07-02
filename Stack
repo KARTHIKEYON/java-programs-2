@@ -2,10 +2,12 @@ import java.util.*;
 class Main{
     public static void main(String[] args){
         Stack <Character> a = new Stack <>();
+        //push
         a.push('a');
         a.push('b');
         a.push('c');
         System.out.println("the elements in the stack are "+a);
+        //peek
         System.out.println("the top element in the stack is "+a.peek());
         if(!a.isEmpty()){
             System.out.println("the Stack is not empty");
@@ -13,6 +15,7 @@ class Main{
         else {
             System.out.println("the stack is empty");
         }
+        //pop
         a.pop();
         a.pop();
         a.pop();
@@ -22,6 +25,9 @@ class Main{
         else {
             System.out.println("the stack is empty");
         }
+        //search
+        int location=a.search('a');
+        System.out.println("the location of a is "+location );
     }
 }
 
@@ -30,4 +36,5 @@ the elements in the stack are [a, b, c]
 the top element in the stack is c
 the Stack is not empty
 the stack is empty
+the location of a is -1
 ----------------------------------------------------------------------------------------------
