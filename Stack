@@ -1,0 +1,33 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Stack <Character> a = new Stack <>();
+        a.push('a');
+        a.push('b');
+        a.push('c');
+        System.out.println("the elements in the stack are "+a);
+        System.out.println("the top element in the stack is "+a.peek());
+        if(!a.isEmpty()){
+            System.out.println("the Stack is not empty");
+        }
+        else {
+            System.out.println("the stack is empty");
+        }
+        a.pop();
+        a.pop();
+        a.pop();
+        if(!a.isEmpty()){
+            System.out.println("the Stack is not empty");
+        }
+        else {
+            System.out.println("the stack is empty");
+        }
+    }
+}
+
+output:
+the elements in the stack are [a, b, c]
+the top element in the stack is c
+the Stack is not empty
+the stack is empty
+----------------------------------------------------------------------------------------------
